@@ -16,6 +16,11 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+# include generic profile aliases
+if [ -f "$HOME/.profile_aliases" ]; then
+  . "$HOME/.profile_aliases"
+fi
+
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
