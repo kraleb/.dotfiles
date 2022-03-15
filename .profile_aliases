@@ -25,7 +25,7 @@ alias ..='cd ..'
   # LS
 alias ls='ls -1 --group-directories-first --classify --color=auto'
 alias la='ls -A'
-alias l.='ls -d .!(|.)'
+alias l.='ls -d .*'
 alias ll='ls -la'
 alias l='ls -C'
   # TYPOS
