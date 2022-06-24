@@ -23,3 +23,9 @@
 	wipe = !git add -A && git commit -m 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 [mergetool]
 	keepBackup = true
+[pull]
+  rebase = true
+[color]
+	ui = auto
+[advice]
+	pushNonFastForward = false
