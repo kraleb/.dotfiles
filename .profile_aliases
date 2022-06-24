@@ -33,6 +33,8 @@ alias xs='cd'
 alias vf='cd'
 alias kk='ll'
 
+# FZF
+
 # VIM
 alias gvim='mvim'
 alias vi=vim

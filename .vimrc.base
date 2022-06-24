@@ -1,0 +1,111 @@
+" ##### GENERAL SETTINGS #####
+" Pick a leader key
+let mapleader = "\\"
+
+" Security
+set modelines=0
+
+" Show line numbers
+set number
+
+" Show file stats
+set ruler
+
+" Blink cursor on error instead of beeping (grr)
+set visualbell
+
+" Allow wildmenu
+set wildmenu
+
+" Encoding
+set encoding=utf-8
+
+" Whitespace
+set wrap
+set textwidth=79
+set formatoptions=tcqrn1
+set tabstop=2
+set softtabstop=2  " number of spaces in tab when editing
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set noshiftround
+
+" status line
+set laststatus=2
+set statusline=%f "tail of the filename
+
+" swapfile
+set noswapfile
+
+" Cursor motion
+set scrolloff=3
+set backspace=indent,eol,start
+set matchpairs+=<:> " use % to jump between pairs
+runtime! macros/matchit.vim
+
+" Allow hidden buffers
+set hidden
+
+" Rendering
+set ttyfast
+
+" mouse
+set mouse=a " click around (i am lazy)
+set mouse=n " split manipulation
+set ttymouse=sgr
+
+" Status bar
+set laststatus=2
+
+" Last line
+set showmode
+set showcmd
+
+" splitting
+set splitright
+set splitbelow
+
+" Searching
+" nnoremap / /\v
+" vnoremap / /\v
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+map <leader><space> :let @/=''<CR> " clear search
+
+" Remap help key.
+inoremap <F1> <ESC>:set invfullscreen<CR>a
+nnoremap <F1> :set invfullscreen<CR>
+vnoremap <F1> :set invfullscreen<CR>
+
+" Textmate holdouts
+
+" Formatting
+map <leader>q gqip
+
+" Visualize tabs and newlines
+set listchars=tab:▸\ ,eol:¬
+" Uncomment this to enable by default:
+" set list " To enable by default
+" Or use your leader key + l to toggle on/off
+map <leader>l :set list!<CR> " Toggle tabs and EOL
+
+" Color scheme (terminal)
+set t_Co=256
+set background=dark
+
+" Move up/down editor lines
+nnoremap j gj
+nnoremap k gk
+nnoremap B ^
+nnoremap E $
+nnoremap Wqa wqa
+nnoremap WQa wqa
+nnoremap W w
+nnoremap Q q
+nnoremap Wa wa
+nnoremap Qa qa
+nnoremap <C-n> :noh<CR><esc>¬
