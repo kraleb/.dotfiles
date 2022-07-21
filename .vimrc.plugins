@@ -16,6 +16,7 @@ Plug 'yggdroot/indentline'
 Plug 'morhetz/gruvbox'
 Plug 'luochen1990/rainbow'
 Plug 'dense-analysis/ale'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()            " required
 filetype plugin indent on    " required
