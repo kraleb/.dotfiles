@@ -6,6 +6,7 @@ filetype off                  " required
 set rtp+=~/.vim/autoloud/plug.vim
 call plug#begin()
 
+Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
@@ -22,10 +23,12 @@ call plug#end()            " required
 filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
-" Turn on syntax highlighting
-syntax on
-
 " ##### PLUGIN SETTINGS #####
+" airblade/vim-gitgutter
+let g:gitgutter_async=0
+let g:gitgutter_realtime=1
+let g:gitgutter_eager=1
+
 " FZF
 nnoremap <C-P> :FZF<CR>
 let g:fzf_layout = { 'window': { 'width': 0.75, 'height': 0.75 } }

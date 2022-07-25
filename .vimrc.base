@@ -1,4 +1,7 @@
 " ##### GENERAL SETTINGS #####
+" Turn on syntax highlighting
+syntax on
+
 " Pick a leader key
 let mapleader = "\\"
 
