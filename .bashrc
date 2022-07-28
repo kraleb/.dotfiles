@@ -2,6 +2,7 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 export PATH="$HOME/.rbenv/bin:$PATH"
+export LIBRARY_PATH=/usr/local/lib
 eval "$(rbenv init -)"
 
 # If not running interactively, don't do anything
